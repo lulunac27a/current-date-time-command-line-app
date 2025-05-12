@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 echo "Current date and time: $(date)"
 echo "Current weekday: $(date +%a) ($(date +%A)) ($(date +%_a)) ($(date +%u)) ($(date +%w)) ($(date +%W))"
 echo "Current month: $(date +%b) ($(date +%B)) ($(date +%_b)) ($(date +%m)) ($(date +%Om)) ($(date +%mth))"

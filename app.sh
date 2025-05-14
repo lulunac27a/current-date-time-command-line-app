@@ -1,4 +1,5 @@
 #!/bin/bash
+#print current date and time in all supported formats
 echo "Current date and time: $(date)"
 echo "Current year: $(date +%Y) ($(date +%_y)) ($(date +%Oy)) ($(date +%OY))"
 echo "Current month: $(date +%b) ($(date +%B)) ($(date +%_b)) ($(date +%m)) ($(date +%Om)) ($(date +%mth))"

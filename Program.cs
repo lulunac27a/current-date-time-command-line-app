@@ -5,6 +5,7 @@ static class Program
     static void Main()
     {
         DateTime now = DateTime.Now;
+        Console.WriteLine("Current date and time in all supported formats:");
         Console.WriteLine(
             "Current day of month: "
                 + now.ToString("dd")

@@ -1,6 +1,8 @@
 ﻿using System;
-class Program {
-    static void Main() {
+class Program
+{
+    static void Main()
+    {
         DateTime now = DateTime.Now;
         Console.WriteLine("Current day of month: " + now.ToString("dd") + " (" + now.ToString("ddd") + ")" + " (" + now.ToString("dddd") + ")");
         Console.WriteLine("Current part of second: " + now.ToString("fffffff"));

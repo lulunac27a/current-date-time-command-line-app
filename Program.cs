@@ -7,6 +7,7 @@ namespace current_date_time_command_line_app
         static void Main()
         {
             DateTime now = DateTime.Now;
+            //print current date and time in all supported formats
             Console.WriteLine("Current date and time in all supported formats:");
             Console.WriteLine("Standard date and time formats:");
             Console.WriteLine("Short date: " + now.ToString("d"));

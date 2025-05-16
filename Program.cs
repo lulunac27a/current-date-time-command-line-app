@@ -6,6 +6,21 @@ static class Program
     {
         DateTime now = DateTime.Now;
         Console.WriteLine("Current date and time in all supported formats:");
+        Console.WriteLine("Standard date and time formats:");
+        Console.WriteLine("Short date: " + now.ToString("d"));
+        Console.WriteLine("Long date: " + now.ToString("D"));
+        Console.WriteLine("Full date: " + now.ToString("F") + " (" + now.ToString("f") + ")");
+        Console.WriteLine("General date: " + now.ToString("g") + " (" + now.ToString("G") + ")");
+        Console.WriteLine("Month day: " + now.ToString("m") + " (" + now.ToString("M") + ")");
+        Console.WriteLine("Round-trip date: " + now.ToString("o") + " (" + now.ToString("O") + ")");
+        Console.WriteLine("RFC1123: " + now.ToString("r") + " (" + now.ToString("R") + ")");
+        Console.WriteLine("Sortable date: " + now.ToString("s"));
+        Console.WriteLine("Time: " + now.ToString("t") + " (" + now.ToString("T") + ")");
+        Console.WriteLine(
+            "Universal sortable date: " + now.ToString("u") + " (" + now.ToString("U") + ")"
+        );
+        Console.WriteLine("Year month: " + now.ToString("y") + " (" + now.ToString("Y") + ")");
+        Console.WriteLine("Other formats:");
         Console.WriteLine(
             "Current day of month: "
                 + now.ToString("dd")

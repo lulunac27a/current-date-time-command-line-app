@@ -17,7 +17,7 @@ static class Program
                 + ")"
         );
         Console.WriteLine("Current part of second: " + now.ToString("fffffff"));
-        Console.WriteLine("Current era: " + now.ToString("g") + " (" + now.ToString("gg") + ")");
+        Console.WriteLine("Current era: " + now.ToString("g ") + " (" + now.ToString("gg") + ")");
         Console.WriteLine("Current hour: " + now.ToString("hh") + " (" + now.ToString("HH") + ")");
         Console.WriteLine("Current minute: " + now.ToString("mm"));
         Console.WriteLine(
@@ -30,8 +30,8 @@ static class Program
                 + now.ToString("MMMM")
                 + ")"
         );
-        Console.WriteLine("Current second: " + now.ToString("s"));
-        Console.WriteLine("Current AM/PM: " + now.ToString("t") + " (" + now.ToString("tt") + ")");
+        Console.WriteLine("Current second: " + now.ToString("s "));
+        Console.WriteLine("Current AM/PM: " + now.ToString("t ") + " (" + now.ToString("tt") + ")");
         Console.WriteLine("Current year: " + now.ToString("yyyy") + ")");
         Console.WriteLine(
             "Current time zone offset: " + now.ToString("zz") + " (" + now.ToString("zzz") + ")"

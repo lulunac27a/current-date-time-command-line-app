@@ -71,7 +71,7 @@ namespace current_date_time_command_line_app
             Console.WriteLine("Current day of week: " + now.DayOfWeek);
             Console.WriteLine("Current day of year: " + now.DayOfYear);
             Console.WriteLine("Current hour: " + now.Hour);
-            Console.WriteLine("Current kind: " + now.Kind);
+            Console.WriteLine("Current kind of time: " + now.Kind);
             Console.WriteLine("Current microsecond: " + now.Microsecond);
             Console.WriteLine("Current millisecond: " + now.Millisecond);
             Console.WriteLine("Current minute: " + now.Minute);

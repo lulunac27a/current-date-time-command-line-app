@@ -3,6 +3,7 @@
 #format the date and time values with a specified pattern for all supported formats
 #use date command for current date and time
 echo "Current date and time: $(date)"
+echo "Current UTC date and time: $(date -u)"
 echo "Current year: $(date +%Y) ($(date +%_y)) ($(date +%Oy)) ($(date +%OY))"
 echo "Current month: $(date +%b) ($(date +%B)) ($(date +%_b)) ($(date +%m)) ($(date +%Om)) ($(date +%mth))"
 echo "Current day of month: $(date +%d) ($(date +%Od)) ($(date +%dth))"

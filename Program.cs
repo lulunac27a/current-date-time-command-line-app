@@ -32,7 +32,7 @@ namespace current_date_time_command_line_app
             Console.WriteLine(
                 "Current era: " + now.ToString("g ") + " (" + now.ToString("gg") + ")"
             );
-            Console.WriteLine("Current year: " + now.ToString("yyyy") + ")");
+            Console.WriteLine("Current year: " + now.ToString("yyyy"));
             Console.WriteLine(
                 "Current month: "
                     + now.ToString("MM")

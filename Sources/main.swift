@@ -37,7 +37,7 @@ print("Current minute: \(formatter.string(from: now))")
 formatter.dateFormat = "s"
 print("Current second: \(formatter.string(from: now))")
 formatter.dateFormat = "SSS"
-print("Current fraction of second: \(formatter.string(from: now))")
+print("Current millisecond: \(formatter.string(from: now))")
 formatter.dateFormat = "z (zzzz) (Z) (ZZZZ) (ZZZZZ) (v) (vvvv) (V) (VV) (VVV) (VVVV) (XXXXX)"
 print("Current time zone: \(formatter.string(from: now))")
 formatter.dateFormat = "B"

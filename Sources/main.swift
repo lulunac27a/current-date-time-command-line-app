@@ -40,3 +40,7 @@ formatter.dateFormat = "SSSSSSSSS"
 print("Current fraction of second: \(formatter.string(from: now))")
 formatter.dateFormat = "z (zzzz) (Z) (ZZZZ) (ZZZZZ) (v) (vvvv) (V) (VV) (VVV) (VVVV) (XXXXX)"
 print("Current time zone: \(formatter.string(from: now))")
+formatter.dateFormat = "B"
+print("Current time of day string: \(formatter.string(from: now))")
+formatter.dateFormat = "A"
+print("Current millisecond of day: \(formatter.string(from: now))")

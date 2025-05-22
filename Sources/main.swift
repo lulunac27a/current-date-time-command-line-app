@@ -1,4 +1,5 @@
 import Foundation
+
 let now: Date = Date()
 let formatter: DateFormatter = DateFormatter()
 print("Current date and time: \(now)")
@@ -39,7 +40,8 @@ formatter.dateFormat = "s"
 print("Current second: \(formatter.string(from: now))")
 formatter.dateFormat = "SSS"
 print("Current millisecond: \(formatter.string(from: now))")
-formatter.dateFormat = "z (zzzz) (Z) (ZZZZ) (ZZZZZ) (v) (vvvv) (V) (VV) (VVV) (VVVV) (XXXXX)"
+formatter.dateFormat =
+    "z (zzzz) (Z) (ZZZZ) (ZZZZZ) (v) (vvvv) (V) (VV) (VVV) (VVVV) (XXXXX)"
 print("Current time zone: \(formatter.string(from: now))")
 formatter.dateFormat = "B"
 print("Current time of day string: \(formatter.string(from: now))")

@@ -2,6 +2,7 @@ import Foundation
 let now = Date()
 let formatter = DateFormatter()
 print("Current date and time: \(now)")
+print("Current date and time in all supported formats:")
 formatter.dateFormat = "GGG (GGGG) (GGGGG)"
 print("Current era: \(formatter.string(from: now))")
 formatter.dateFormat = "y"

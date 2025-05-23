@@ -64,3 +64,5 @@ formatter.timeStyle = .medium
 timeString += " (\(formatter.string(from: now)))"
 formatter.timeStyle = .long
 timeString += " (\(formatter.string(from: now)))"
+formatter.timeStyle = .full
+timeString += " (\(formatter.string(from: now)))"

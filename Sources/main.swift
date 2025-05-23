@@ -52,7 +52,7 @@ print("Current millisecond of day: \(formatter.string(from: now))")
 print("Current date and time using localized formats:")
 formatter.dateStyle = .short
 formatter.timeStyle = .none
-var dateString: String = formatter.string(from: now)
+var dateString: String = formatter.string(from: now)  //date string
 formatter.dateStyle = .medium
 dateString += " (\(formatter.string(from: now)))"
 formatter.dateStyle = .long
@@ -62,7 +62,7 @@ dateString += " (\(formatter.string(from: now)))"
 print("Current date: \(dateString)")
 formatter.dateStyle = .none
 formatter.timeStyle = .short
-var timeString: String = formatter.string(from: now)
+var timeString: String = formatter.string(from: now)  //time string
 formatter.timeStyle = .medium
 timeString += " (\(formatter.string(from: now)))"
 formatter.timeStyle = .long
@@ -72,31 +72,31 @@ timeString += " (\(formatter.string(from: now)))"
 print("Current time: \(timeString)")
 print("Current date and time in other calendars")
 formatter.dateFormat = "MM/dd/yyyy (MMMM dd, yyyy) (GGG) (GGGG) (GGGGG)"
-formatter.calendar = Calendar(identifier: .gregorian)
+formatter.calendar = Calendar(identifier: .gregorian)  //Gregorian calendar
 print("Gregorian calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .buddhist)
+formatter.calendar = Calendar(identifier: .buddhist)  //Buddhist calendar
 print("Buddhist calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .chinese)
+formatter.calendar = Calendar(identifier: .chinese)  //Chinese calendar
 print("Chinese calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .coptic)
+formatter.calendar = Calendar(identifier: .coptic)  //Coptic calendar
 print("Coptic calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .ethiopicAmeteAlem)
+formatter.calendar = Calendar(identifier: .ethiopicAmeteAlem)  //Ethiopic calendar
 print("Ethiopic calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .ethiopicAmeteMihret)
+formatter.calendar = Calendar(identifier: .ethiopicAmeteMihret)  //Ethiopic calendar
 print("Ethiopic calendar (Amete Mihret): \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .hebrew)
+formatter.calendar = Calendar(identifier: .hebrew)  //Hebrew calendar
 print("Hebrew calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .indian)
+formatter.calendar = Calendar(identifier: .indian)  //Indian calendar
 print("Indian calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .islamic)
+formatter.calendar = Calendar(identifier: .islamic)  //Islamic calendar
 print("Islamic calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .islamicCivil)
+formatter.calendar = Calendar(identifier: .islamicCivil)  //Islamic civil calendar
 print("Islamic civil calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .iso8601)
+formatter.calendar = Calendar(identifier: .iso8601)  //ISO 8601 calendar
 print("ISO 8601 calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .japanese)
+formatter.calendar = Calendar(identifier: .japanese)  //Japanese calendar
 print("Japanese calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .persian)
+formatter.calendar = Calendar(identifier: .persian)  //Persian calendar
 print("Persian calendar: \(formatter.string(from: now))")
-formatter.calendar = Calendar(identifier: .republicOfChina)
+formatter.calendar = Calendar(identifier: .republicOfChina)  //Republic of China calendar
 print("Republic of China calendar: \(formatter.string(from: now))")

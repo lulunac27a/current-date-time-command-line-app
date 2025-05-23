@@ -1,8 +1,10 @@
 import Foundation
 
-let now: Date = Date()
-let formatter: DateFormatter = DateFormatter()
+let now: Date = Date()  //current date and time
+let formatter: DateFormatter = DateFormatter()  //date formatter
 print("Current date and time: \(now)")
+//print current date and time in all supported formats
+//format the date and time values with a specified pattern for all supported formats
 print("Current date and time in all supported formats:")
 formatter.dateFormat = "GGG (GGGG) (GGGGG)"
 print("Current era: \(formatter.string(from: now))")

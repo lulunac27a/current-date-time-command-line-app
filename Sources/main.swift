@@ -57,6 +57,7 @@ formatter.dateStyle = .long
 dateString += " (\(formatter.string(from: now)))"
 formatter.dateStyle = .full
 dateString += " (\(formatter.string(from: now)))"
+print("Current date: \(dateString)")
 formatter.dateStyle = .none
 formatter.timeStyle = .short
 var timeString: String = formatter.string(from: now)
@@ -66,3 +67,4 @@ formatter.timeStyle = .long
 timeString += " (\(formatter.string(from: now)))"
 formatter.timeStyle = .full
 timeString += " (\(formatter.string(from: now)))"
+print("Current time: \(timeString)")

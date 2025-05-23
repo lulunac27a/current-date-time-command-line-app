@@ -50,7 +50,7 @@ print("Current millisecond of day: \(formatter.string(from: now))")
 print("Current date and time using localized formats:")
 formatter.dateStyle = .short
 formatter.timeStyle = .none
-var dateString = formatter.string(from: now)
+var dateString: String = formatter.string(from: now)
 formatter.dateStyle = .medium
 dateString += " \(formatter.string(from: now))"
 formatter.dateStyle = .long
@@ -59,7 +59,7 @@ formatter.dateStyle = .full
 dateString += " \(formatter.string(from: now))"
 formatter.dateStyle = .none
 formatter.timeStyle = .short
-var timeString = formatter.string(from: now)
+var timeString: String = formatter.string(from: now)
 formatter.timeStyle = .medium
 timeString += " \(formatter.string(from: now))"
 formatter.timeStyle = .long

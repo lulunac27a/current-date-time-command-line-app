@@ -47,3 +47,20 @@ formatter.dateFormat = "B"
 print("Current time of day string: \(formatter.string(from: now))")
 formatter.dateFormat = "A"
 print("Current millisecond of day: \(formatter.string(from: now))")
+print("Current date and time using localized formats:")
+formatter.dateStyle = .short
+formatter.timeStyle = .none
+var dateString = formatter.string(from: now)
+formatter.dateStyle = .medium
+dateString += " \(formatter.string(from: now))"
+formatter.dateStyle = .long
+dateString += " \(formatter.string(from: now))"
+formatter.dateStyle = .full
+dateString += " \(formatter.string(from: now))"
+formatter.dateStyle = .none
+formatter.timeStyle = .short
+var timeString = formatter.string(from: now)
+formatter.timeStyle = .medium
+timeString += " \(formatter.string(from: now))"
+formatter.timeStyle = .long
+timeString += " \(formatter.string(from: now))"

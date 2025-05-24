@@ -1,0 +1,20 @@
+package main
+import ("fmt" 
+"time")
+func main() {
+	now := time.Now()
+	fmt.Println("Current date and time:", now)
+	fmt.Println("Current year:", now.Year())
+	fmt.Println("Current month:", now.Month())
+	fmt.Println("Current day:", now.Day())
+	fmt.Println("Current hour:", now.Hour())
+	fmt.Println("Current minute:", now.Minute())
+	fmt.Println("Current second:", now.Second())
+	fmt.Println("Current weekday:", now.Weekday())
+	fmt.Println("Current Unix timestamp:", now.Unix())
+	fmt.Println("Current Unix timestamp in milliseconds:", now.UnixMilli())
+	fmt.Println("Current Unix timestamp in microseconds:", now.UnixMicro())
+	fmt.Println("Current Unix timestamp in nanoseconds:", now.UnixNano())
+	fmt.Println("Current date and time in UTC:", now.UTC())
+	fmt.Println("Current date and time in local timezone:", now.Local())
+}

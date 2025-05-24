@@ -1,6 +1,10 @@
 package main
-import ("fmt" 
-"time")
+
+import (
+	"fmt"
+	"time"
+)
+
 func main() {
 	now := time.Now()
 	fmt.Println("Current date and time using Time properties:")

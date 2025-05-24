@@ -3,6 +3,7 @@ import ("fmt"
 "time")
 func main() {
 	now := time.Now()
+	fmt.Println("Current date and time using Time properties:")
 	fmt.Println("Current date and time:", now)
 	fmt.Println("Current year:", now.Year())
 	fmt.Println("Current month:", now.Month())

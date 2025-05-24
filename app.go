@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	now := time.Now()
+	now := time.Now() //current date and time
 	fmt.Println("Current date and time using Time properties:")
 	fmt.Println("Current date and time:", now)
 	fmt.Println("Current year:", now.Year())
@@ -34,6 +34,8 @@ func main() {
 	fmt.Println("Current date and time in UTC:", now.UTC())
 	fmt.Println("Current date and time in local timezone:", now.Local())
 	fmt.Println("Current date and time using format strings:")
+	//print current date and time in all supported formats
+	//format the date and time values with a specified pattern for all supported formats
 	fmt.Println("Current year:", now.Format("2006 (06)"))
 	fmt.Println("Current month:", now.Format("January (01) (Jan)"))
 	fmt.Println("Current day:", now.Format("2 (02)"))

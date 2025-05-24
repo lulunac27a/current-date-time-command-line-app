@@ -16,6 +16,7 @@ func main() {
 	fmt.Println("Current hour:", now.Format("3 (03) (15)"))
 	fmt.Println("Current minute:", now.Format("4 (04)"))
 	fmt.Println("Current second:", now.Format("5 (05)"))
+	fmt.Println("Current nanosecond:", now.Format("000"))
 	fmt.Println("Current AM/PM:", now.Format("PM"))
 	fmt.Println("Current day of week:", now.Format("Monday (Mon)"))
 	fmt.Println("Current timezone:", now.Format("MST (-07:00:00) (Z07:00:00)"))

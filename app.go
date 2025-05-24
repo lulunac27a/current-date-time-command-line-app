@@ -30,11 +30,11 @@ func main() {
 	fmt.Println("Current nanosecond:", now.Nanosecond())
 	fmt.Println("Current weekday:", now.Weekday())
 	fmt.Println("Current day of year:", now.YearDay())
-	isoYear, isoWeek := now.ISOWeek()
+	isoYear, isoWeek := now.ISOWeek() //ISO year and week number
 	fmt.Println("Current ISO year:", isoYear)
 	fmt.Println("Current ISO week:", isoWeek)
 	fmt.Println("Current timezone:", now.Location())
-	zoneName, zoneOffset := now.Zone()
+	zoneName, zoneOffset := now.Zone() //timezone name and offset
 	fmt.Println("Current timezone name:", zoneName)
 	fmt.Println("Current timezone offset:", zoneOffset)
 	fmt.Println("Is current time in daylight saving time?", now.IsDST())

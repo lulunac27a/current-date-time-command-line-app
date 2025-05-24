@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("Current second:", now.Second())
 	fmt.Println("Current nanosecond:", now.Nanosecond())
 	fmt.Println("Current weekday:", now.Weekday())
-	fmt.Println("Current year day:", now.YearDay())
+	fmt.Println("Current day of year:", now.YearDay())
 	isoYear, isoWeek := now.ISOWeek()
 	fmt.Println("Current ISO year:", isoYear)
 	fmt.Println("Current ISO week:", isoWeek)

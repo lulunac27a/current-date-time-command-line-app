@@ -7,6 +7,18 @@ import (
 
 func main() {
 	now := time.Now() //current date and time
+	fmt.Println("Current date and time using format strings:")
+	//print current date and time in all supported formats
+	//format the date and time values with a specified pattern for all supported formats
+	fmt.Println("Current year:", now.Format("2006 (06)"))
+	fmt.Println("Current month:", now.Format("January (01) (Jan)"))
+	fmt.Println("Current day:", now.Format("2 (02)"))
+	fmt.Println("Current hour:", now.Format("3 (03) (15)"))
+	fmt.Println("Current minute:", now.Format("4 (04)"))
+	fmt.Println("Current second:", now.Format("5 (05)"))
+	fmt.Println("Current AM/PM:", now.Format("PM"))
+	fmt.Println("Current day of week:", now.Format("Monday (Mon)"))
+	fmt.Println("Current timezone:", now.Format("MST (-07:00:00) (Z07:00:00)"))
 	fmt.Println("Current date and time using Time properties:")
 	fmt.Println("Current date and time:", now)
 	fmt.Println("Current year:", now.Year())
@@ -33,16 +45,4 @@ func main() {
 	fmt.Println("Current Unix timestamp in nanoseconds:", now.UnixNano())
 	fmt.Println("Current date and time in UTC:", now.UTC())
 	fmt.Println("Current date and time in local timezone:", now.Local())
-	fmt.Println("Current date and time using format strings:")
-	//print current date and time in all supported formats
-	//format the date and time values with a specified pattern for all supported formats
-	fmt.Println("Current year:", now.Format("2006 (06)"))
-	fmt.Println("Current month:", now.Format("January (01) (Jan)"))
-	fmt.Println("Current day:", now.Format("2 (02)"))
-	fmt.Println("Current hour:", now.Format("3 (03) (15)"))
-	fmt.Println("Current minute:", now.Format("4 (04)"))
-	fmt.Println("Current second:", now.Format("5 (05)"))
-	fmt.Println("Current AM/PM:", now.Format("PM"))
-	fmt.Println("Current day of week:", now.Format("Monday (Mon)"))
-	fmt.Println("Current timezone:", now.Format("MST (-07:00:00) (Z07:00:00)"))
 }

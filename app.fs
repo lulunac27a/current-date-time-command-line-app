@@ -1,7 +1,9 @@
 module CurrentDateTimeApp
 
 open System
-let now = DateTime.Now
+let now = DateTime.Now //current date and time
+//print current date and time in all supported formats
+//format the date and time values with a specified pattern for all supported formats
 printfn "Current date and time in all supported formats:"
 printfn "Standard date and time formats:"
 printfn "Short date: %s" (now.ToString("d"))

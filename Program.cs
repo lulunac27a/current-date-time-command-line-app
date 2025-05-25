@@ -69,7 +69,9 @@ namespace current_date_time_command_line_app
             Console.WriteLine("Current year: " + now.Year);
             Console.WriteLine("Current month: " + now.Month);
             Console.WriteLine("Current day of month: " + now.Day);
-            Console.WriteLine("Current day of week: " + now.DayOfWeek);
+            Console.WriteLine(
+                "Current day of week: " + (int)now.DayOfWeek + " (" + now.DayOfWeek + ")"
+            );
             Console.WriteLine("Current day of year: " + now.DayOfYear);
             Console.WriteLine("Current date: " + now.Date);
             Console.WriteLine("Today's date: " + DateTime.Today);

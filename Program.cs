@@ -57,7 +57,7 @@ namespace current_date_time_command_line_app
                 "Current hour: " + now.ToString("hh") + " (" + now.ToString("HH") + ")"
             );
             Console.WriteLine("Current minute: " + now.ToString("mm"));
-            Console.WriteLine("Current second: " + now.ToString("s "));
+            Console.WriteLine("Current second: " + now.ToString("ss"));
             Console.WriteLine("Current part of second: " + now.ToString("fffffff"));
             Console.WriteLine(
                 "Current AM/PM: " + now.ToString("t ") + " (" + now.ToString("tt") + ")"

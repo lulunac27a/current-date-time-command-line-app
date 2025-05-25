@@ -1,4 +1,5 @@
 module CurrentDateTimeApp
+
 open System
 let now = DateTime.Now
 printfn "Current date and time in all supported formats:"

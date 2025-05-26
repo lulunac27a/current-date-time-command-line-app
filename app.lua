@@ -1,7 +1,8 @@
 local now = os.time()
 print("Current timestamp: " .. now)
 print("Current day of week: " .. os.date("%a", now) .. " (" .. os.date("%A", now) .. ") (" .. os.date("%w", now) .. ")")
-print("Current month: " .. os.date("%b", now) .. " (" .. os.date("%B", now) .. ") (" .. os.date("%h", now) .. ") (" .. os.date("%m", now) .. ")")
+print("Current month: " ..
+os.date("%b", now) .. " (" .. os.date("%B", now) .. ") (" .. os.date("%h", now) .. ") (" .. os.date("%m", now) .. ")")
 print("Current locale date and time: " .. os.date("%c", now))
 print("Current century: " .. os.date("%C", now))
 print("Current day of month: " .. os.date("%d", now))

@@ -1,5 +1,7 @@
-local now = os.time()
+local now = os.time() --current date and time
 print("Current timestamp: " .. now)
+--print current date and time in all supported formats
+--format the date and time values with a specified pattern for all supported formats
 print("Current day of week: " .. os.date("%a", now) .. " (" .. os.date("%A", now) .. ") (" .. os.date("%w", now) .. ")")
 print("Current month: " ..
 os.date("%b", now) .. " (" .. os.date("%B", now) .. ") (" .. os.date("%h", now) .. ") (" .. os.date("%m", now) .. ")")

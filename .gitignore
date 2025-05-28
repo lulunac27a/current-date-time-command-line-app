@@ -2,3 +2,5 @@ obj
 bin
 *.sln
 .build
+*/target
+*/Cargo.lock

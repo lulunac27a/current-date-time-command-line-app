@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# print current date and time in all supported formats
+# format the date and time values with a specified pattern for all supported formats
 puts "Current day of week: #{Time.now.strftime('%a')} (#{Time.now.strftime('%A')}) (#{Time.now.strftime('%w')})"
 puts "Current month: #{Time.now.strftime('%b')} (#{Time.now.strftime('%B')}) (#{Time.now.strftime('%h')}) (#{Time.now.strftime('%m')})"
 puts "Current locale date and time: #{Time.now.strftime('%c')}"

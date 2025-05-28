@@ -17,3 +17,5 @@ print("Current week number: " .. os.date("%U", now) .. " (" .. os.date("%W", now
 print("Current locale date: " .. os.date("%x", now))
 print("Current locale time: " .. os.date("%X", now))
 print("Current year: " .. os.date("%Y", now) .. " (" .. os.date("%y", now) .. ")")
+print("Current timezone: " .. os.date("%Z", now))
+print("Current timezone offset: " .. os.date("%z", now))

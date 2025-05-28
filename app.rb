@@ -12,3 +12,5 @@ puts "Current week number: " + Time.now.strftime("%U") + " (" + Time.now.strftim
 puts "Current locale date: " + Time.now.strftime("%x")
 puts "Current locale time: " + Time.now.strftime("%X")
 puts "Current year: " + Time.now.strftime("%Y") + " (" + Time.now.strftime("%y") + ")"
+puts "Current timezone: " + Time.now.strftime("%z")
+puts "Current timezone offset: " + Time.now.strftime("%Z")

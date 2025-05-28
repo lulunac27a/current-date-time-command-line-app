@@ -4,6 +4,8 @@ fn main() {
     let now = Local::now(); //current date and time
     //print current date and time in all supported formats
     //format the date and time values with a specified pattern for all supported formats
+    println!("Current date and time in all supported formats");
+    println!("Standard date and time formats:");
     println!("Current RFC3339 format: {}", now.to_rfc3339());
     println!(
         "Current year: {} ({}) ({})",

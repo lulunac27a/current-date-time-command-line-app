@@ -1,4 +1,6 @@
-const now = new Date();
+const now = new Date(); //current date and time
+//print current date and time in all supported formats
+//format the date and time values with a specified pattern for all supported formats
 console.log(`Current date and time: ${now}`);
 console.log(`Current locale date and time: ${now.toLocaleString()}`);
 console.log(`Current locale date: ${now.toLocaleDateString()}`);

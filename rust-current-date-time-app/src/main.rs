@@ -67,4 +67,37 @@ fn main() {
     println!("Current locale date and time: {}", now.format("%c"));
     println!("Current ISO 8601 format: {}", now.format("%+"));
     println!("Current Unix timestamp: {}", now.format("%s"));
+    println!("Date and time methods:");
+    println!("Current date: {}", now.date());
+    println!("Current time: {}", now.time());
+    println!("Current timestamp: {}", now.timestamp());
+    println!(
+        "Current timestamp with milliseconds: {}",
+        now.timestamp_millis()
+    );
+    println!(
+        "Current timestamp with microseconds: {}",
+        now.timestamp_micros()
+    );
+    println!(
+        "Current timestamp with nanoseconds: {}",
+        now.timestamp_nanos()
+    );
+    println!(
+        "Current timestamp since second in milliseconds: {}",
+        now.timestamp_subsec_millis()
+    );
+    println!(
+        "Current timestamp since second in microseconds: {}",
+        now.timestamp_subsec_micros()
+    );
+    println!(
+        "Current timestamp since second in nanoseconds: {}",
+        now.timestamp_subsec_nanos()
+    );
+    println!("Current timezone offset: {}", now.offset());
+    println!("Current timezone: {:?}", now.timezone());
+    println!("Current RFC 2822 format: {}", now.to_rfc2822());
+    println!("Current RFC 3339 format: {}", now.to_rfc3339());
+    println!("Current UTC date and time: {}", now.to_utc());
 }

@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Current Date and Time in Command Line Application","text":"<p>This app displays and prints the current date and time in all supported formats in the command line. For shell scripts (<code>.sh</code>), use <code>chmod +x app.sh</code> to make it executable.</p>"}]}
